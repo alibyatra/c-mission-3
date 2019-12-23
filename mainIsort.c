@@ -11,6 +11,6 @@ int arr [length] = {0};
     }
     insertion_sort(arr, length);
     for(int j=0; j<=length-1; j++)
-        printf("%d,", *(arr+j));
+        printf("%d,", arr[j]);
     printf("\n");
 }

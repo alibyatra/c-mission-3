@@ -8,7 +8,7 @@ void shift_element(int* arr, int i)
         *(arr+j) = *(arr+(j-1));
     }
 }
-
+/*
 void insertion_sort(int* arr , int len)
 {
     for (int i = 0; i < len; i++)
@@ -16,7 +16,7 @@ void insertion_sort(int* arr , int len)
         int min, minIndex, nextIndex;
         min = *(arr+i);
         nextIndex = *(arr+i-1);
-        for (int j = i; j < len; j++)
+        for (int j = i+1; j < len; j++)
         {
             if (min > *(arr+j-1))
             {
@@ -31,4 +31,18 @@ void insertion_sort(int* arr , int len)
         }
     }
     
+}
+*/
+void insertion_sort(int* arr , int len){
+    for(int i=0; i<len - 1;i++){
+        int min = *(arr + i),val = *(arr + i), ind = i;
+        for (int j = i + 1;j < len; j++){
+            if(*(arr+j) < min){
+                min = *(arr+j);
+                ind = j;
+            }
+        }
+        *(arr+i) = min;
+        *(arr+ind) = val;
+    }
 }

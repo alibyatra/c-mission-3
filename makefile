@@ -7,7 +7,7 @@ isort: mainIsort.o isort.o
 	$(CC) $(FLAGS) -o isort mainIsort.o isort.o 
 
 mainIsort.o: mainIsort.c isort.h
-	$(CC) $(FLAGS) -c mainSort.c 
+	$(CC) $(FLAGS) -c mainIsort.c 
 
 isort.o: isort.c isort.h
 	$(CC) $(FLAGS) -c isort.c 

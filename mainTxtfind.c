@@ -1,23 +1,20 @@
 #include <stdio.h>
 #include "txtfind.h"
-#define LINE 256
 #define WORD 30
+#define Line 256
 
-int main()
-{
+int main(){
+
     char str [WORD];
-    getword(str);
-    char activity;
-    switch (scanf("%c",&activity))
-    {
-    case 'a':
-        print_lines(str);
-        break;
-    case 'b':
-        print_similar_words(str);
-        break;
-    default:
-    printf("Eror, No commend found: %c\n", activity);
-        break;
+    getWord(str);
+    char c;
+    scanf(" %c",&c);
+
+    if(c == 'a'){
+    print_lines(str);
+    }
+
+    if(c == 'b'){
+    print_similar_words(str);
     }
 }
