@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "txtfind.h"
 #include <string.h>
-#define LINE 5
+#define LINE 256
 #define WORD 30
 
 int getLine(char s[])
